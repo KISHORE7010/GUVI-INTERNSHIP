@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #81c784; /* Light green border */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #4a148c; /* Dark purple text */
+    margin: 0; /* Remove default margin for better control */
+}
+
+.description {
+    color: #009688; /* Teal text */
+    font-size: 18px;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #009688; /* Blinking cursor effect */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #009688; }
+}
+
+button {
+    background-color: #8e24aa; /* Medium purple background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a1b9a; /* Darker purple background on hover */
+}
